@@ -18,7 +18,7 @@
 
   <div class="field">
   <%= form.label :preferred_race %>
-  <%= form.text_area :preferred_race %>
+  <%= form.collection_select :preferred_race, User::RACES, :to_s, :to_s, :include_blank => true%>
   </div>
 
   <div class="field">
